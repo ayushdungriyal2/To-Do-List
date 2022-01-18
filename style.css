@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d356, #d88771);
+  color: white;
+  font-family: "poppins";
+}
+
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+
+form button {
+  color: #d88771;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+form button:hover {
+  background-color: #d88771;
+  color: white;
+}
+
+.toDoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.toDo {
+  display: flex;
+  justify-content: space-between;
+  width: 24em;
+  min-height: 3em;
+  background-color: white;
+  margin: 0.5rem;
+  align-items: center;
+  color: black;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.trashButton {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e0444f;
+  min-height: 3em;
+  padding: 1rem;
+}
+
+.trashButton:hover {
+  color: #e0444f;
+  background-color: white;
+  transition: all 0.3 ease;
+}
+
+li {
+  list-style-type: none;
+}
+
+.toDoItem {
+  padding-left: 1rem;
+  flex: 1;
+}
+
+.checkButton {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #42bc4a;
+  min-height: 3em;
+  padding: 1rem;
+}
+
+.checkButton:hover {
+  color: #42bc4a;
+  background-color: white;
+  transition: all 0.3 ease;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translate(8rem) rotate(20deg);
+  opacity: 0;
+}
